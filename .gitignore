@@ -1,0 +1,60 @@
+# ==============================================================================
+# Android & Gradle Build Artifacts
+# ==============================================================================
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Gradle build cache & intermediate outputs
+.gradle/
+build/
+app/build/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local SDK & machine configuration
+local.properties
+
+# Log files
+*.log
+
+# ==============================================================================
+# IDE & Editors Configuration
+# ==============================================================================
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# ==============================================================================
+# Operating System Junk
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux / Vim / Emacs swap and backup files
+*~
+*.swp
+*.swo
+
+# ==============================================================================
+# Project-specific: Large binary dependencies and download cache
+# (统一通过 scripts/download-models.sh 自动化按需拉取，严禁提交至 Git 仓库)
+# ==============================================================================
+.download-cache/
+app/libs/*.aar
+app/src/main/assets/models/
